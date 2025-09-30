@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+        }
+        .highlight {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-left: 4px solid #007acc;
+            margin: 20px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Simple HTML Page</h1>
+        
+        <h2>About This Page</h2>
+        <p>My name is Amir Syauqi</p>
+        
+        <div class="highlight">
+            <p><strong>Key Features:</strong> This page showcases clean design, responsive layout, and modern web standards.</p>
+        </div>
+        
+        <h2>What You'll Find Here</h2>
+        <ul>
+            <li>Clean and modern design</li>
+            <li>Responsive layout that works on all devices</li>
+            <li>Semantic HTML structure</li>
+            <li>CSS styling for better appearance</li>
+            <li>Interactive elements</li>
+        </ul>
+        
+        <h2>Getting Started</h2>
+        <p>You can modify this HTML file to create your own website. Try changing the colors, text, or adding new sections to make it your own!</p>
+        
+        <div class="footer">
+            <p>&copy; 2025 Simple HTML Page. Created with HTML5 and CSS3.</p>
+        </div>
+    </div>
+
+    <script>
+        // Simple JavaScript to make the page interactive
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Simple HTML page loaded successfully!');
+            
+            // Add click event to the main heading
+            const heading = document.querySelector('h1');
+            heading.addEventListener('click', function() {
+                this.style.color = this.style.color === 'rgb(0, 122, 204)' ? '#333' : '#007acc';
+            });
+        });
+    </script>
+</body>
+</html>
